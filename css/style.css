@@ -1,0 +1,101 @@
+html, body {
+  height: 100%;
+}
+
+header {
+  font-size: 26px;
+  font-family: 'Poiret One', cursive;
+  vertical-align: middle;
+  margin-bottom: 20px;
+}
+
+#login-link, #register-link {
+  text-decoration: none;
+  outline:0;
+  border:none;
+  /* First we need to help some browsers along for this to work.
+     Just because a vendor prefix is there, doesn't mean it will
+     work in a browser made by that vendor either, it's just for
+     future-proofing purposes I guess. */
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  /* ...and now for the proper property */
+  transition:.5s;
+
+}
+
+#login-link:hover, #register-link:hover {
+    color: #e65a56;
+    text-decoration: none;
+}
+
+#login-lin:active, #register-link:active {
+  outline:0;
+  border:none;
+}
+
+.top-margin {
+  margin-top: 12%;
+}
+
+#content {
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+#login {
+  font-size: 16px;
+  font-family: 'Roboto Condensed', sans-serif;
+  vertical-align: middle;
+  background-color: rgba(223, 56, 76, 0.1);
+  width: 90%;
+  padding: 8px;
+}
+
+#login-info {
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+  border: none;
+  background-color: rgba(252, 252, 252, 0.3);
+  border-radius: 5%;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 480px) {
+  #login-info {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 481px) {
+  #login-info {
+    width: 300px;
+  }
+}
+
+@media only screen and (min-width: 970px) {
+  #login-info {
+    width: 350px;
+  }
+}
+
+.form-group input {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+#register-button {
+    display: none;
+}
+
+#login-button, #register-button, #clear {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+button {
+  width: 49%;
+}
